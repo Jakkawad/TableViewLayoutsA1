@@ -205,6 +205,21 @@
             <point key="canvasLocation" x="1078" y="753"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="rCL-mW-DeU">
+            <objects>
+                <viewController id="rld-uL-QgU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kh5-S0-ubv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aUI-ju-GE8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfS-Wt-2np" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="1055"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="veJ-5B-dq3">
             <objects>
                 <viewController id="nMN-P4-UxB" sceneMemberID="viewController">
