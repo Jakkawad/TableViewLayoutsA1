@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return items.count
-        return 4
+        return 8
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -32,36 +32,59 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell1") as! Menu2TableViewCell
         
         //return cell0
-        
         if indexPath.row == 0 {
-            let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0") as! Menu1TableViewCell
-            cell0.imageViewBanner.setImageWithURL(imageBannerUrl!)
-            return cell0
-        } else if indexPath.row == 1{
-            let cell1 = tableView.dequeueReusableCellWithIdentifier("tableCell1") as! Menu2TableViewCell
+            let menu0 = tableView.dequeueReusableCellWithIdentifier("tableMenu0") as? Menu0TableViewCell
             
-            return cell1
+            return menu0!
+        } else if indexPath.row == 1 {
+            let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0") as? Menu1TableViewCell
+            cell0?.imageViewBanner.setImageWithURL(imageBannerUrl!)
+            return cell0!
         } else if indexPath.row == 2 {
-            let cell2 = tableView.dequeueReusableCellWithIdentifier("tableCell2") as! Menu3TableViewCell
-            cell2.imageViewLeft.setImageWithURL(imagePromotionLeft!)
-            cell2.imageViewRight.setImageWithURL(imagePromotionLeft!)
-            return cell2
-        } else {
-            let cell3 = tableView.dequeueReusableCellWithIdentifier("tableCell3") as! Menu4TableViewCell
+            let menu1 = tableView.dequeueReusableCellWithIdentifier("tableMenu1")
             
-            return cell3
+            return menu1!
+        } else if indexPath.row == 3 {
+            let cell1 = tableView.dequeueReusableCellWithIdentifier("tableCell1") as? Menu2TableViewCell
+            
+            return cell1!
+        } else if indexPath.row == 4 {
+            let menu2 = tableView.dequeueReusableCellWithIdentifier("tableMenu2")
+            
+            return menu2!
+        } else if indexPath.row == 5 {
+            let cell2 = tableView.dequeueReusableCellWithIdentifier("tableCell2") as? Menu3TableViewCell
+            //cell2?.imageViewLeft.setImageWithURL(imagePromotionLeft!)
+            //cell2?.imageViewRight.setImageWithURL(imagePromotionLeft!)
+            return cell2!
+        } else if indexPath.row == 6 {
+            let menu3 = tableView.dequeueReusableCellWithIdentifier("tableMenu3")
+            
+            return menu3!
+        } else {
+            let cell3 = tableView.dequeueReusableCellWithIdentifier("tableCell3") as? Menu4TableViewCell
+            
+            return cell3!
         }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 110
+            return 55
         } else if indexPath.row == 1 {
             return 110
         } else if indexPath.row == 2 {
-            return 200
+            return 24
+        } else if indexPath.row == 3 {
+            return 110
+        } else if indexPath.row == 4 {
+            return 24
+        } else if indexPath.row == 5 {
+            return 420
+        } else if indexPath.row == 6 {
+            return 24
         } else {
-            return 220
+            return 450
         }
     }
     override func viewDidLoad() {
