@@ -1,16 +1,17 @@
 //
-//  Menu1TableViewCell.swift
+//  Menu3TableViewCell.swift
 //  TableViewLayoutsA1
 //
-//  Created by admin on 4/19/2559 BE.
+//  Created by admin on 4/20/2559 BE.
 //  Copyright © 2559 All2Sale. All rights reserved.
 //
 
 import UIKit
 
-class Menu1TableViewCell: UITableViewCell {
+class Menu3TableViewCell: UITableViewCell {
+    @IBOutlet weak var imageViewLeft: UIImageView!
+    @IBOutlet weak var imageViewRight: UIImageView!
 
-    @IBOutlet weak var imageViewBanner: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
