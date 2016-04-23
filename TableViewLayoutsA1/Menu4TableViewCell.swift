@@ -50,7 +50,7 @@ class Menu4TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        collectionView.registerNib(UINib(nibName: "Menu4CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectCell2")
+        //collectionView.registerNib(UINib(nibName: "Menu4CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectCell2")
         loadData()
         
     }

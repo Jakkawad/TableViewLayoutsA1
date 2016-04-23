@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		06FE64DDF9775C29123A0601 /* Pods_TableViewLayoutsA1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC18EB70C52B9FFA4F8FB33 /* Pods_TableViewLayoutsA1.framework */; };
+		3181CD731CCB2BF70086FCCD /* Menu4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181CD721CCB2BF70086FCCD /* Menu4CollectionViewCell.swift */; };
 		845B22F51CC9D8CE001D79F2 /* Menu4TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B22F41CC9D8CE001D79F2 /* Menu4TableViewCell.swift */; };
-		845B22F81CC9D91A001D79F2 /* Menu4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B22F61CC9D91A001D79F2 /* Menu4CollectionViewCell.swift */; };
-		845B22F91CC9D91A001D79F2 /* Menu4CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845B22F71CC9D91A001D79F2 /* Menu4CollectionViewCell.xib */; };
 		845B22FB1CC9E7BC001D79F2 /* Menu0TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B22FA1CC9E7BC001D79F2 /* Menu0TableViewCell.swift */; };
 		845B22FE1CC9E875001D79F2 /* Menu0CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B22FC1CC9E875001D79F2 /* Menu0CollectionViewCell.swift */; };
 		845B22FF1CC9E875001D79F2 /* Menu0CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845B22FD1CC9E875001D79F2 /* Menu0CollectionViewCell.xib */; };
@@ -33,9 +32,8 @@
 
 /* Begin PBXFileReference section */
 		0F910EC69D8304B310D3F448 /* Pods-TableViewLayoutsA1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewLayoutsA1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewLayoutsA1/Pods-TableViewLayoutsA1.debug.xcconfig"; sourceTree = "<group>"; };
+		3181CD721CCB2BF70086FCCD /* Menu4CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu4CollectionViewCell.swift; sourceTree = "<group>"; };
 		845B22F41CC9D8CE001D79F2 /* Menu4TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu4TableViewCell.swift; sourceTree = "<group>"; };
-		845B22F61CC9D91A001D79F2 /* Menu4CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu4CollectionViewCell.swift; sourceTree = "<group>"; };
-		845B22F71CC9D91A001D79F2 /* Menu4CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu4CollectionViewCell.xib; sourceTree = "<group>"; };
 		845B22FA1CC9E7BC001D79F2 /* Menu0TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu0TableViewCell.swift; sourceTree = "<group>"; };
 		845B22FC1CC9E875001D79F2 /* Menu0CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu0CollectionViewCell.swift; sourceTree = "<group>"; };
 		845B22FD1CC9E875001D79F2 /* Menu0CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu0CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -113,8 +111,7 @@
 				845B23001CC9E9D2001D79F2 /* Menu3CollectionViewCell.swift */,
 				845B23011CC9E9D2001D79F2 /* Menu3CollectionViewCell.xib */,
 				845B22F41CC9D8CE001D79F2 /* Menu4TableViewCell.swift */,
-				845B22F61CC9D91A001D79F2 /* Menu4CollectionViewCell.swift */,
-				845B22F71CC9D91A001D79F2 /* Menu4CollectionViewCell.xib */,
+				3181CD721CCB2BF70086FCCD /* Menu4CollectionViewCell.swift */,
 			);
 			path = TableViewLayoutsA1;
 			sourceTree = "<group>";
@@ -203,7 +200,6 @@
 				84C9C3ED1CC62E06000BA8E6 /* Menu1TableViewCell.xib in Resources */,
 				845B23031CC9E9D2001D79F2 /* Menu3CollectionViewCell.xib in Resources */,
 				84C9C3E31CC6275D000BA8E6 /* LaunchScreen.storyboard in Resources */,
-				845B22F91CC9D91A001D79F2 /* Menu4CollectionViewCell.xib in Resources */,
 				84C9C3E01CC6275D000BA8E6 /* Assets.xcassets in Resources */,
 				84C9C3F51CC630A0000BA8E6 /* Menu2CollectionViewCell.xib in Resources */,
 				845B22FF1CC9E875001D79F2 /* Menu0CollectionViewCell.xib in Resources */,
@@ -267,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				845B22FE1CC9E875001D79F2 /* Menu0CollectionViewCell.swift in Sources */,
-				845B22F81CC9D91A001D79F2 /* Menu4CollectionViewCell.swift in Sources */,
 				84C9C3DB1CC6275D000BA8E6 /* ViewController.swift in Sources */,
 				84C9C3EF1CC62FFA000BA8E6 /* Menu2TableViewCell.swift in Sources */,
 				8470EDAE1CC7362700C727A5 /* Menu3TableViewCell.swift in Sources */,
@@ -277,6 +272,7 @@
 				845B22F51CC9D8CE001D79F2 /* Menu4TableViewCell.swift in Sources */,
 				845B23021CC9E9D2001D79F2 /* Menu3CollectionViewCell.swift in Sources */,
 				84C9C3D91CC6275D000BA8E6 /* AppDelegate.swift in Sources */,
+				3181CD731CCB2BF70086FCCD /* Menu4CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
