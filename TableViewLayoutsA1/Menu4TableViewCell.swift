@@ -45,7 +45,8 @@ class Menu4TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.row)
+        print(JSONArray[indexPath.row])
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -167,7 +167,7 @@
                                                             </view>
                                                             <connections>
                                                                 <outlet property="imageViewProduct" destination="ohs-03-oZO" id="IU6-nO-C59"/>
-                                                                <segue destination="rld-uL-QgU" kind="push" id="kEc-C2-y9N"/>
+                                                                <segue destination="rld-uL-QgU" kind="push" identifier="ProductDetailSegue" id="kEc-C2-y9N"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -224,16 +224,16 @@
             </objects>
             <point key="canvasLocation" x="1078" y="753"/>
         </scene>
-        <!--View Controller-->
+        <!--Product Detail View Controller-->
         <scene sceneID="rCL-mW-DeU">
             <objects>
-                <viewController id="rld-uL-QgU" sceneMemberID="viewController">
+                <viewController id="rld-uL-QgU" customClass="ProductDetailViewController" customModule="TableViewLayoutsA1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kh5-S0-ubv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R1r-wI-iVc">
-                                <rect key="frame" x="1" y="71" width="61" height="21"/>
+                                <rect key="frame" x="20" y="73" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -243,6 +243,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aUI-ju-GE8"/>
+                    <connections>
+                        <outlet property="lblName" destination="R1r-wI-iVc" id="ig0-Fy-JNs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfS-Wt-2np" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

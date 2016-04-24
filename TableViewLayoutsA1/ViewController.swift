@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let items = ["item1", "item2", "item3", "item4"]
     var imageBannerUrl = NSURL(string: "http://placehold.it/320x100")
     var imagePromotionLeft = NSURL(string: "http://placehold.it/156x200")
-    
+    var productDetail:AnyObject!
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -87,6 +87,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return 450
         }
     }
+    /*
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ProductDetailSegue" {
+            //print("ProductDetail")
+            //let indexPath = self.JSONArray[indexPath.row]
+            
+            if let collectionCell:Menu4CollectionViewCell = sender as? Menu4CollectionViewCell {
+                print(collectionCell)
+                /*
+                if let destination = segue.destinationViewController as? ProductDetailViewController {
+                    //print("ViewController")
+                    
+                } else {
+                    print("Error ViewController")
+                }
+                */
+                //let destination = segue.destinationViewController as? ProductDetailViewController
+            } else {
+                print("Error Sender")
+            }
+        } else {
+            print("Error Segue")
+        }
+    }
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
