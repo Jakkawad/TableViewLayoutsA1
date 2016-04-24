@@ -117,6 +117,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         tableView.registerNib(UINib(nibName: "Menu1TableViewCell", bundle: nil), forCellReuseIdentifier: "tableCell0")
         tableView.registerNib(UINib(nibName: "Menu3TableViewCell", bundle: nil), forCellReuseIdentifier: "tableCell2")
+        
+        //print(PassData.passJSON)
     }
 
     override func didReceiveMemoryWarning() {

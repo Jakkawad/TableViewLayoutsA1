@@ -16,7 +16,12 @@ class ProductDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //print(PassData.passJSON)
+        productDetail = PassData.passJSON
+        //print(productDetail.description)
+        let item = self.productDetail as! NSDictionary
+        let productName = item.objectForKey("ProductName") as? String
+        lblName.text = productName
         // Do any additional setup after loading the view.
     }
 

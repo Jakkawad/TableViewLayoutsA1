@@ -45,7 +45,9 @@ class Menu4TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(JSONArray[indexPath.row])
+        //print(JSONArray[indexPath.row])
+        PassData.passJSON = self.JSONArray[indexPath.row] as! NSDictionary
+        //print(PassData.passJSON)
         
     }
     override func awakeFromNib() {
