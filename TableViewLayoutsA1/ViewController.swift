@@ -84,7 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if indexPath.row == 6 {
             return 24
         } else {
-            return 450
+            return 640
         }
     }
     /*

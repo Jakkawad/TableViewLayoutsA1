@@ -17,7 +17,7 @@ class Menu4TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     var imageBannerUrl = NSURL(string: "http://placehold.it/100x100")
     var JSONArray = NSArray()
     func loadData() {
-        Alamofire.request(.POST, "https://www.all2sale.com/sendmail/testfunction/json/apitest.php", parameters: ["api":"productall", "productall":"12"]).responseJSON { response in
+        Alamofire.request(.POST, "https://www.all2sale.com/sendmail/testfunction/json/apitest.php", parameters: ["api":"productall", "productall":"6"]).responseJSON { response in
          //print(response.result)
             self.JSONArray = response.result.value as! NSArray
             self.collectionView.reloadData()
@@ -40,6 +40,8 @@ class Menu4TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
         baseURL += imageURL!
         let imageURL2 = NSURL(string: baseURL)
         col2?.imageViewProduct.setImageWithURL(imageURL2!)
+        col2?.lblProductName.text = item.objectForKey("ProductName") as? String
+        col2?.lblProductPrice.text = item.objectForKey("ProductPrice") as? String
         //col2?.imageViewProduct.setImageWithURL(imageBannerUrl!)
         return col2!
     }

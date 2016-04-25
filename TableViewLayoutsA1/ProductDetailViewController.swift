@@ -21,7 +21,9 @@ class ProductDetailViewController: UIViewController {
         //print(productDetail.description)
         let item = self.productDetail as! NSDictionary
         let productName = item.objectForKey("ProductName") as? String
-        lblName.text = productName
+        //lblName.text = productName
+        //
+        self.title = item.objectForKey("ProductName") as? String
         // Do any additional setup after loading the view.
     }
 
