@@ -74,6 +74,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3181CD9C1CCD391B0086FCCD /* Menu0 */ = {
+			isa = PBXGroup;
+			children = (
+				845B22FA1CC9E7BC001D79F2 /* Menu0TableViewCell.swift */,
+				845B22FC1CC9E875001D79F2 /* Menu0CollectionViewCell.swift */,
+				845B22FD1CC9E875001D79F2 /* Menu0CollectionViewCell.xib */,
+			);
+			name = Menu0;
+			sourceTree = "<group>";
+		};
+		3181CD9D1CCD39240086FCCD /* Menu1 */ = {
+			isa = PBXGroup;
+			children = (
+				84C9C3EA1CC62E06000BA8E6 /* Menu1TableViewCell.swift */,
+				84C9C3EB1CC62E06000BA8E6 /* Menu1TableViewCell.xib */,
+			);
+			name = Menu1;
+			sourceTree = "<group>";
+		};
+		3181CD9E1CCD392C0086FCCD /* Menu2 */ = {
+			isa = PBXGroup;
+			children = (
+				84C9C3EE1CC62FFA000BA8E6 /* Menu2TableViewCell.swift */,
+				84C9C3F21CC630A0000BA8E6 /* Menu2CollectionViewCell.swift */,
+				84C9C3F31CC630A0000BA8E6 /* Menu2CollectionViewCell.xib */,
+			);
+			name = Menu2;
+			sourceTree = "<group>";
+		};
+		3181CD9F1CCD39330086FCCD /* Menu3 */ = {
+			isa = PBXGroup;
+			children = (
+				8470EDAC1CC7362700C727A5 /* Menu3TableViewCell.swift */,
+				8470EDAD1CC7362700C727A5 /* Menu3TableViewCell.xib */,
+				845B23001CC9E9D2001D79F2 /* Menu3CollectionViewCell.swift */,
+				845B23011CC9E9D2001D79F2 /* Menu3CollectionViewCell.xib */,
+			);
+			name = Menu3;
+			sourceTree = "<group>";
+		};
+		3181CDA01CCD393B0086FCCD /* Menu4 */ = {
+			isa = PBXGroup;
+			children = (
+				845B22F41CC9D8CE001D79F2 /* Menu4TableViewCell.swift */,
+				3181CD721CCB2BF70086FCCD /* Menu4CollectionViewCell.swift */,
+			);
+			name = Menu4;
+			sourceTree = "<group>";
+		};
 		84C9C3CC1CC6275D000BA8E6 = {
 			isa = PBXGroup;
 			children = (
@@ -102,20 +151,11 @@
 				84C9C3DF1CC6275D000BA8E6 /* Assets.xcassets */,
 				84C9C3E11CC6275D000BA8E6 /* LaunchScreen.storyboard */,
 				84C9C3E41CC6275D000BA8E6 /* Info.plist */,
-				845B22FA1CC9E7BC001D79F2 /* Menu0TableViewCell.swift */,
-				845B22FC1CC9E875001D79F2 /* Menu0CollectionViewCell.swift */,
-				845B22FD1CC9E875001D79F2 /* Menu0CollectionViewCell.xib */,
-				84C9C3EA1CC62E06000BA8E6 /* Menu1TableViewCell.swift */,
-				84C9C3EB1CC62E06000BA8E6 /* Menu1TableViewCell.xib */,
-				84C9C3EE1CC62FFA000BA8E6 /* Menu2TableViewCell.swift */,
-				84C9C3F21CC630A0000BA8E6 /* Menu2CollectionViewCell.swift */,
-				84C9C3F31CC630A0000BA8E6 /* Menu2CollectionViewCell.xib */,
-				8470EDAC1CC7362700C727A5 /* Menu3TableViewCell.swift */,
-				8470EDAD1CC7362700C727A5 /* Menu3TableViewCell.xib */,
-				845B23001CC9E9D2001D79F2 /* Menu3CollectionViewCell.swift */,
-				845B23011CC9E9D2001D79F2 /* Menu3CollectionViewCell.xib */,
-				845B22F41CC9D8CE001D79F2 /* Menu4TableViewCell.swift */,
-				3181CD721CCB2BF70086FCCD /* Menu4CollectionViewCell.swift */,
+				3181CD9C1CCD391B0086FCCD /* Menu0 */,
+				3181CD9D1CCD39240086FCCD /* Menu1 */,
+				3181CD9E1CCD392C0086FCCD /* Menu2 */,
+				3181CD9F1CCD39330086FCCD /* Menu3 */,
+				3181CDA01CCD393B0086FCCD /* Menu4 */,
 				3181CD741CCB2F710086FCCD /* ProductDetailViewController.swift */,
 				3181CD9A1CCD29F80086FCCD /* PassData.swift */,
 			);
