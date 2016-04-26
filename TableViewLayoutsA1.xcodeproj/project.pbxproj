@@ -123,6 +123,27 @@
 			name = Menu4;
 			sourceTree = "<group>";
 		};
+		3181CDC11CCFD61E0086FCCD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84C9C3DA1CC6275D000BA8E6 /* ViewController.swift */,
+				3181CD9C1CCD391B0086FCCD /* Menu0 */,
+				3181CD9D1CCD39240086FCCD /* Menu1 */,
+				3181CD9E1CCD392C0086FCCD /* Menu2 */,
+				3181CD9F1CCD39330086FCCD /* Menu3 */,
+				3181CDA01CCD393B0086FCCD /* Menu4 */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3181CDC21CCFD62E0086FCCD /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3181CD741CCB2F710086FCCD /* ProductDetailViewController.swift */,
+			);
+			name = ProductDetail;
+			sourceTree = "<group>";
+		};
 		84C9C3CC1CC6275D000BA8E6 = {
 			isa = PBXGroup;
 			children = (
@@ -146,17 +167,12 @@
 			isa = PBXGroup;
 			children = (
 				84C9C3D81CC6275D000BA8E6 /* AppDelegate.swift */,
-				84C9C3DA1CC6275D000BA8E6 /* ViewController.swift */,
+				3181CDC11CCFD61E0086FCCD /* ViewController */,
 				84C9C3DC1CC6275D000BA8E6 /* Main.storyboard */,
 				84C9C3DF1CC6275D000BA8E6 /* Assets.xcassets */,
 				84C9C3E11CC6275D000BA8E6 /* LaunchScreen.storyboard */,
 				84C9C3E41CC6275D000BA8E6 /* Info.plist */,
-				3181CD9C1CCD391B0086FCCD /* Menu0 */,
-				3181CD9D1CCD39240086FCCD /* Menu1 */,
-				3181CD9E1CCD392C0086FCCD /* Menu2 */,
-				3181CD9F1CCD39330086FCCD /* Menu3 */,
-				3181CDA01CCD393B0086FCCD /* Menu4 */,
-				3181CD741CCB2F710086FCCD /* ProductDetailViewController.swift */,
+				3181CDC21CCFD62E0086FCCD /* ProductDetail */,
 				3181CD9A1CCD29F80086FCCD /* PassData.swift */,
 			);
 			path = TableViewLayoutsA1;
