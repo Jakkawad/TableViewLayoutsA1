@@ -13,6 +13,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
 
+    var tableCell0 = "tableCell0"
+    var tableCell1 = "tableCell1"
+    var tableCell2 = "tableCell2"
+    var tableCell3 = "tableCell3"
+    var tableCell4 = "tableCell4"
+    var tableCell5 = "tableCell5"
+    var tableMenu0 = "tableMenu0"
+    var tableMenu1 = "tableMenu1"
+    var tableMenu2 = "tableMenu2"
+    
     let items = ["item1", "item2", "item3", "item4"]
     var imageBannerUrl = NSURL(string: "http://placehold.it/320x100")
     var imagePromotionLeft = NSURL(string: "http://placehold.it/156x200")

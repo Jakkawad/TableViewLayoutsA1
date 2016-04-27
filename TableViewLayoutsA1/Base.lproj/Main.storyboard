@@ -249,19 +249,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kft-DX-E9t">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uSn-Jr-iOM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="rld-uL-QgU" id="Sw6-KQ-CSq"/>
-                                    <outlet property="delegate" destination="rld-uL-QgU" id="Sec-ya-ePY"/>
+                                    <outlet property="dataSource" destination="rld-uL-QgU" id="SOx-dx-qAu"/>
+                                    <outlet property="delegate" destination="rld-uL-QgU" id="T9w-uj-JKG"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aUI-ju-GE8"/>
+                    <connections>
+                        <outlet property="tableView" destination="uSn-Jr-iOM" id="WSs-kr-AQ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfS-Wt-2np" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
