@@ -7,13 +7,40 @@
 //
 
 import UIKit
+import MapleBacon
 
-class ProductDetailViewController: UIViewController {
+class ProductDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var lblName:UILabel!
     
+    @IBOutlet weak var tableView: UITableView!
     var productDetail:AnyObject!
     
+    var tCell0 = "tableCell0"
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell11") as? ProductDetailMenu0TableViewCell
+        let item = self.productDetail as! NSDictionary
+        var baseURL = "https://www.all2sale.com/store/"
+        let imageURL = item.objectForKey("ProductShowImage") as? String
+        baseURL += imageURL!
+        let imageURL2 = NSURL(string: baseURL)
+        cell0?.imageViewProduct.setImageWithURL(imageURL2!)
+
+        return cell0!
+    }
+ 
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 200
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //print(PassData.passJSON)
@@ -24,6 +51,8 @@ class ProductDetailViewController: UIViewController {
         //lblName.text = productName
         //
         self.title = item.objectForKey("ProductName") as? String
+        
+        tableView.registerNib(UINib(nibName: "ProductDetailMenu0TableViewCell", bundle: nil), forCellReuseIdentifier: "tableCell11")
         // Do any additional setup after loading the view.
     }
 

@@ -19,7 +19,7 @@ class Menu2TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     var JSONArray = NSArray()
     func loadData() {
         Alamofire.request(.POST, "https://www.all2sale.com/sendmail/testfunction/json/apitest.php", parameters: ["api":"productall", "productall":"12"]).responseJSON { response in
-            print(response.result.value)
+            //print(response.result.value)
             //print(response.data)
             //print(response.response)
             self.JSONArray = response.result.value as! NSArray
